@@ -719,3 +719,74 @@ body{
     border-color:#2563eb;
 
 }
+
+
+  @media (max-width: 768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    #sidebar{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+
+    #sidebar ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #sidebar li{
+        margin: 5px;
+    }
+
+    #maincontent{
+        width: 100%;
+        padding: 15px;
+    }
+
+    #recommendations{
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .task-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task-form input,
+    .task-form select,
+    .task-form button{
+        width: 100%;
+    }
+
+    .task-controls{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task-controls input,
+    .task-controls select{
+        width: 100%;
+    }
+
+    .dashboard-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .task-card{
+        width: 100%;
+    }
+
+}
