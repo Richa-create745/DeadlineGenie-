@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeadlineGenie</title>
+
+    <link rel="stylesheet" href="STYLING/style.css">
+    <script src="JVASCRIPT/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div id="sidebar">
+
+        <h2>DeadlineGenie</h2>
+
+        <ul>
+            <li id="dashboardBtn">Dashboard</li>
+            <li id="tasksBtn">Tasks</li>
+            <li id="goalsBtn">Goals</li>
+            <li id="habitsBtn">Habits</li>
+            <li id="settingsBtn">Settings</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div id="maincontent">
+
+        <h1>AI Productivity Companion</h1>
+
+        <div class="task-form">
+
+    <input type="text" id="taskInput" placeholder="Enter Task">
+
+    <input type="date" id="deadlineInput">
+
+
+    <!-- Priority -->
+    <select id="priorityInput">
+
+        <option value="High">
+            High Priority
+        </option>
+
+        <option value="Medium">
+            Medium Priority
+        </option>
+
+        <option value="Low">
+            Low Priority
+        </option>
+
+    </select>
+
+
+    <!-- Category -->
+    <select id="categoryInput">
+
+        <option value="Study">
+            📚 Study
+        </option>
+
+        <option value="Work">
+            💼 Work
+        </option>
+
+        <option value="Personal">
+            🏠 Personal
+        </option>
+
+        <option value="Health">
+            🏃 Health
+        </option>
+
+    </select>
+
+
+    <button id="addTaskBtn">
+        Add Task
+    </button>
+
+</div>
+
+
+        <div id="dashboardSection">
+
+    <h2>Dashboard Overview</h2>
+
+    <div class="dashboard-cards">
+
+        <div class="dash-card">
+            <h3>Total Tasks</h3>
+            <p id="totalTasks">0</p>
+        </div>
+
+
+        <div class="dash-card">
+            <h3>High Priority</h3>
+            <p id="highTasks">0</p>
+        </div>
+
+
+        <div class="dash-card">
+            <h3>Total Goals</h3>
+            <p id="totalGoals">0</p>
+        </div>
+
+
+        <div class="dash-card">
+            <h3>Total Habits</h3>
+            <p id="totalHabits">0</p>
+        </div>
+
+    </div>
+    <div class="progress-box">
+
+    <h2>Task Progress</h2>
+
+    <div class="progress-bar">
+
+        <div id="progressFill"></div>
+
+    </div>
+
+    <p id="progressText">
+        0% Completed
+    </p>
+
+</div>
+
+</div>
+
+
+
+<!-- //here -->
+
+<div class="task-controls">
+
+    <input 
+    type="text" 
+    id="searchTask" 
+    placeholder="🔍 Search task">
+
+    <select id="filterTask">
+
+        <option value="All">
+            All Tasks
+        </option>
+
+        <option value="High">
+            High Priority
+        </option>
+
+        <option value="Medium">
+            Medium Priority
+        </option>
+
+        <option value="Low">
+            Low Priority
+        </option>
+
+        <option value="Completed">
+            Completed
+        </option>
+
+    </select>
+
+</div>
+
+       <div id="taskList">
+    <h2>Your Tasks</h2>
+</div>
+
+  
+
+<!-- GOALS -->
+
+<div id="goalsSection" class="hidden-section">
+
+    <h2>Your Goals</h2>
+
+    <input type="text" id="goalInput" placeholder="Enter your goal">
+
+    <button id="addGoalBtn">
+        Add Goal
+    </button>
+
+    <div id="goalList"></div>
+
+</div>
+  
+<!-- HABITS -->
+
+<div id="habitsSection" class="hidden-section">
+
+    <h2>Daily Habits</h2>
+
+    <input type="text" id="habitInput" placeholder="Enter habit">
+
+    <button id="addHabitBtn">
+        Add Habit
+    </button>
+
+    <div id="habitList"></div>
+
+</div>
+
+
+<div id="settingsSection" class="hidden-section">
+    <h2>Settings</h2>
+    <p>Customize your productivity companion.</p>
+</div>
+
+    </div>
+
+
+    <!-- AI Recommendations -->
+
+    <div id="recommendations">
+
+        <h2>Smart Recommendations</h2>
+
+        <button id="generatePlanBtn">
+            Generate Plan
+        </button>
+
+        <div id="aiOutput">
+
+            Your recommendations will appear here.
+
+        </div>
+
+    </div>
+
+    <!-- <script src="JAVASCRIPT/script.js"></script> -->
+
+</body>
+
+</html>
